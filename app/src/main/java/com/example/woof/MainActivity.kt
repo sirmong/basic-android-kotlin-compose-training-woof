@@ -139,10 +139,12 @@ fun DogInformation(
     Column(modifier = modifier) {
         Text(
             text = stringResource(dogName),
-            modifier = Modifier.padding(top = dimensionResource(id = R.dimen.padding_small))
+            modifier = Modifier.padding(top = dimensionResource(id = R.dimen.padding_small)),
+            style = MaterialTheme.typography.displayMedium
         )
         Text(
             text = stringResource(R.string.years_old, dogAge),
+            style = MaterialTheme.typography.bodyLarge
         )
     }
 }
